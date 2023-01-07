@@ -69,11 +69,9 @@ window.addEventListener("orientationchange", function() {
    // Verifique a orientação da tela
    if (screen.orientation.angle === 0) {
       // A tela está na posição vertical
-      removeClass(videoWrapper, "fullscreen");
-      removeClass(video, "fullscreen_video");
+      video.exitFullscreen();
    } else {
-      addClass(videoWrapper, "fullscreen");
-      addClass(video, "fullscreen_video");
+      video.requestFullscreen();
    }
    
 });
