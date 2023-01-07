@@ -53,6 +53,27 @@ video.addEventListener('timeupdate', function showButton() {
   if (video.currentTime > TIME_TO_SHOW_BUTTON) {
     // your logic to show the button
     document.getElementById("chamada").style.display = "flex";
+    document.getElementById("perguntas").style.display = "block";
     video.removeEventListener('timeupdate', showButton);
   }
+});
+
+// Adicione um ouvinte de evento de mudança de orientação à tela
+window.addEventListener("orientationchange", function() {
+   var videoWrapper = document.getElementById("videoWrapper");
+   var video = document.getElementById("myVideo");
+
+   // Selecione o elemento de vídeo
+   var video = document.querySelector("#myVideo");
+
+   // Verifique a orientação da tela
+   if (screen.orientation.angle === 0) {
+      // A tela está na posição vertical
+      removeClass(videoWrapper, "fullscreen");
+      removeClass(video, "fullscreen_video");
+   } else {
+      addClass(videoWrapper, "fullscreen");
+      addClass(video, "fullscreen_video");
+   }
+   
 });

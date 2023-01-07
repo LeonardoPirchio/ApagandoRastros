@@ -37,15 +37,14 @@
             <div class="wrapper">
                 <h1>DESCUBRA COMO SEU PARCEIRO(A) PODE ESTAR TE RASTREANDO</h1>
                 <!-- <p>Assista o vídeo até o final.<br>Ele sairá do ar em breve.</p> -->
-                <p><b>Aviso:</b> Assista o vídeo até o final.<br><span class="spanBarra">O site será desligado em 3 horas.</span></p>
-                <div style="width: 100%;height: 280px;margin: auto;
-                display: flex;align-items: center;justify-content: center;"> <!-- background: #6A6A6A; -->
-                    <!-- <iframe src="https://player.vimeo.com/video/786805708?h=102a315bc0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                <p><b>Aviso:</b> Assista o vídeo até o final.<br><span>O site será desligado em 3 horas.</span></p>
+                <div id="videoWrapper">
                     <video id="myVideo" width="100%" height="100%">
                         <source src="https://leonardopirchio.github.io/ApagandoRastros/media/COPY%20MILION%C3%81RIA.mp4" type="video/mp4">
                         <source src="https://leonardopirchio.github.io/ApagandoRastros/media/COPY%20MILION%C3%81RIA.mp4" type="video/ogg">
                     </video>
-                    <button id="playPause" class="playPause" onclick="playPause()"></button>
+                    <div id="playPause" class="playPause"></div>
+                    <button onclick="playPause()"></button>
                 </div>
                 <a id="chamada" class="animated-button4" href="#">
                     <span></span>
@@ -223,7 +222,7 @@
             </div>
         </section>
         -->
-        <section id="perguntas">
+        <section id="perguntas" style="display: none;">
         <!-- style="background: #1A1A1A;"> -->
             <div class="wrapper">
                 <h1>PERGUNTAS FREQUENTES</h1>
@@ -234,17 +233,17 @@
                 
                 <div class="accordion">
                     <p class="accordion__question">Como irei receber ele?<span>+</span></p>
-                    <p class="accordion__answer">CSS stands for Cascading Style Sheets.</p>
+                    <p class="accordion__answer">Você receberá pelo e-mail o seu acesso para ler o e-Book na plataforma da Kiwify, caso você não tenha um cadastro, será necessário criar uma conta, depois, você poderá acessar a plataforma e ler o e-Book.</p>
                 </div>
                 
                 <div class="accordion">
                     <p class="accordion__question">Como sou rastreado?<span>+</span></p>
-                    <p class="accordion__answer">JavaScript is a client side programming language.</p>  
+                    <p class="accordion__answer">Todos os smartphones, <b>Android</b> ou <b>iOS</b>, possuem uma ferramenta integrada que está monitorando toda a sua rotina. Não pense que é o GPS. É algo muito além disso. Tem pessoas que possuem o conhecimento dessa ferramenta e usam ela para rastrear seus parceiros(as).</p>  
                 </div>
                 
                 <div class="accordion">
                     <p class="accordion__question">Como funciona garantia?<span>+</span></p>
-                    <p class="accordion__answer">JavaScript is a client side programming language.</p>  
+                    <p class="accordion__answer">Oferecemos uma garantia de resultados incondicional para garantir sua total satisfação com a compra. Se você não alcançar os resultados desejados ou simplesmente não gostar do conteúdo, basta entrar em contato com nosso suporte nos primeiros 7 dias após a compra e solicitar o reembolso do seu investimento. Sem perguntas e sem pegadinhas.</p>  
                 </div>
             </div>
         </section>
